@@ -24,3 +24,5 @@ document.getElementById("subtraction").innerHTML = "The difference of " + num1 +
 document.getElementById("multiplication").innerHTML = "The product of " + num1 + " and " + num2 + " is " + product;
 document.getElementById("division").innerHTML = "The quotient of " + num1 + " and " + num2 + " is " + quotient;
 document.getElementById("modulus").innerHTML = "The mod result of " + num1 + " and " + num2 + " is " + modResult;
+
+
