@@ -2,6 +2,7 @@ var userName = window.prompt("Welcome to the Vacation Planner. Please enter your
 var greeting = document.getElementById("greeting");
 greeting.innerHTML += ", " + userName;
 
+//first section trip duration
 var enterDays = document.getElementById("enterDays");
 enterDays.onclick = calculateDays;
 
@@ -39,3 +40,14 @@ function calculateDays(){
 	};
 };
 
+//second section trip budget
+var enterBudget = document.getElementById("enterBudget");
+enterBudget.onclick = calculateBudget;
+
+function calculateBudget(){
+	var budgetInput = document.getElementById("tripBudget");
+	var budget = budgetInput.value;
+
+	var tripExchange = document.getElementById("tripExchangeMsg");
+	tripExchange.innerHTML = "That means you'll need " + budget * 4.1 + " RON for your trip."
+};
