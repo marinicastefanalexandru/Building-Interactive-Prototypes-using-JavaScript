@@ -50,4 +50,10 @@ function calculateBudget(){
 
 	var tripExchange = document.getElementById("tripExchangeMsg");
 	tripExchange.innerHTML = "That means you'll need " + budget * 4.1 + " RON for your trip."
+
+
+	var daysInput = document.getElementById("days");
+	var days = daysInput.value;
+	var dailyExchange = document.getElementById("dailyExchangeMsg");
+	dailyExchange.innerHTML = "That means you can spend " + budget * 4.1 / days + " RON per day";
 };
