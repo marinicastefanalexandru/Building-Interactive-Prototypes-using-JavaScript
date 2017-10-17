@@ -49,7 +49,7 @@ function calculateBudget(){
 	var budget = budgetInput.value;
 
 	var tripExchange = document.getElementById("tripExchangeMsg");
-	tripExchange.innerHTML = "That means you'll need " + budget * 4.1 + " RON for your trip."
+	tripExchange.innerHTML = "That means you'll need " + Math.round(budget * 4.1) + " RON for your trip."
 
 
 	var daysInput = document.getElementById("days");
