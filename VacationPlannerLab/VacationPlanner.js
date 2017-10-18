@@ -56,4 +56,10 @@ function calculateBudget(){
 	var days = daysInput.value;
 	var dailyExchange = document.getElementById("dailyExchangeMsg");
 	dailyExchange.innerHTML = "That means you can spend " + Math.round(budget * 4.1 / days) + " RON per day";
+
+	var exchange10 = document.getElementById("exchange10Msg");
+	exchange10.innerHTML = "You'll need " + 4.1 * 10 + " for an item that would cost you 10 USD";
+	var exchange500 = document.getElementById("exchange500Msg");
+	exchange500.innerHTML = "You'll need " + 4.1 * 500 + " for an item that would cost you 500 USD";
+
 };
