@@ -2,6 +2,19 @@ var userName = window.prompt("Welcome to the Vacation Planner. Please enter your
 var greeting = document.getElementById("greeting");
 greeting.innerHTML += ", " + userName;
 
+//change background image
+var pics = ["pics/pic1", "pics/pic2", "pics/pic3", "pics/pic4"];
+var currentImage = 0;
+setInterval(changeImage, 3000);
+function changeImage(){
+	currentImage ++;
+	if (currentImage > pics.length - 1){
+		currentImage = 0;
+	}
+	document.body.style.backgroundImage = "url(" + pics[currentImage] + ".jpg)";
+};
+
+
 //first section trip duration
 var enterDays = document.getElementById("enterDays");
 enterDays.onclick = calculateDays;
@@ -63,3 +76,4 @@ function calculateBudget(){
 	exchange500.innerHTML = "You'll need " + 4.1 * 500 + " for an item that would cost you 500 USD";
 
 };
+
